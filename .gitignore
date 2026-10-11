@@ -1,0 +1,24 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Android & Gradle
+**/local.properties
+**/.gradle/
+**/build/
+**/*.iml
+**/.cxx/
+**/captures/
+
+# IDE files
+**/.idea/
+**/.settings/
+**/.project
+**/.classpath
+
+# Spring Boot / Maven / Compiler output
+**/target/
+**/bin/
+**/*.class
+**/*.jar
+**/*.war

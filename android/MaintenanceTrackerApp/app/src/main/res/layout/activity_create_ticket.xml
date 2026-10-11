@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Ticket"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Displays the registered unit automatically -->
+    <TextView
+        android:id="@+id/tvRegisteredUnitInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filing ticket for your registered unit"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Category -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Category (e.g. Plumbing, Electrical)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Description -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Description / Issue Details">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Ticket" />
+
+</LinearLayout>

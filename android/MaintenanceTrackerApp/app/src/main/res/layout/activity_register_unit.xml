@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resident Registration"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Unit Number -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Unit Number (e.g. D-401)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUnitNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Resident Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Full Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etResidentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Phone Number -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Phone Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnRegisterUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Unit" />
+
+</LinearLayout>
